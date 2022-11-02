@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mybtn1 {
+  @apply rounded-3xl outline-none border-none bg-gradient-to-r from-[#276EA3] via-[#0FB3C5] to-[#0CC77D] py-2 px-6;
+}
+.mybtn {
+  @apply border-[2px]  px-4 py-2 text-white rounded-3xl   border-[#0cc77d]  hover:bg-gradient-to-r from-[#276EA3] via-[#0FB3C5] to-[#0CC77D]  duration-300;
+}
+@layer components {
+  .my-button {
+    background: linear-gradient(
+      96.24deg,
+      #276ea3 0.15%,
+      #0fb3c5 49.29%,
+      #0cc77d 98.43%
+    );
+    border-radius: 30px;
+  }
+
+  .fancy-border {
+    border: 2px solid;
+    border-radius: 5rem;
+    border-image: linear-gradient(
+        to right,
+        #276ea3 0.15%,
+        #0fb3c5 49.29%,
+        #0cc77d 98.43%
+      )
+      10;
+  }
+
+  .fancy-text {
+    background-image: linear-gradient(
+      to right,
+      #276ea3 0.15%,
+      #0fb3c5 49.29%,
+      #0cc77d 98.43%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .main_bg {
+    background: #1e1e1e;
+  }
+  .card_bg {
+    background: #13161b;
+  }
+  .card_bg1 {
+    background: #13161b;
+  }
+  .mygradiant {
+    background-image: repeating-linear-gradient(
+        450deg,
+        hsla(253, 0%, 96%, 0.05) 0px,
+        hsla(253, 0%, 96%, 0.05) 1px,
+        transparent 1px,
+        transparent 104px
+      ),
+      repeating-linear-gradient(
+        360deg,
+        hsla(253, 0%, 96%, 0.05) 0px,
+        hsla(253, 0%, 96%, 0.05) 1px,
+        transparent 1px,
+        transparent 104px
+      ),
+      repeating-linear-gradient(
+        360deg,
+        hsla(253, 0%, 96%, 0.07) 0px,
+        hsla(253, 0%, 96%, 0.07) 1px,
+        transparent 1px,
+        transparent 26px
+      ),
+      repeating-linear-gradient(
+        450deg,
+        hsla(253, 0%, 96%, 0.07) 0px,
+        hsla(253, 0%, 96%, 0.07) 1px,
+        transparent 1px,
+        transparent 26px
+      ),
+      linear-gradient(
+        144deg,
+        rgba(55, 144, 195, 0.899) 0%,
+        #1e1e1e 24%,
+        #1e1e1e 70%,
+        rgba(13, 193, 143, 0.9495259831460674) 180%
+      );
+  }
+  .myscndbg {
+    background: rgb(19, 22, 27);
+    background: radial-gradient(
+      circle,
+      rgba(19, 22, 27, 1) 0%,
+      rgba(19, 22, 27, 0.469188904494382) 98%
+    );
+  }
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
